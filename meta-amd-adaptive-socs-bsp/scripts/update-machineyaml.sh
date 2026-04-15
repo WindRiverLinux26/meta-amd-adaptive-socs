@@ -35,7 +35,7 @@ update_yaml() {
     machineyaml=$layer/conf/machineyaml/$machine.yaml
 
     echo
-    echo machineyaml: $layer/conf/machineyaml/$machineyaml
+    echo machineyaml: $machineyaml
     echo machine: $machine
 
     hwurl=$(grep '^'$machine' ' $index | cut -d ' ' -f 2)
